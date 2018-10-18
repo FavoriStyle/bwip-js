@@ -52,7 +52,7 @@ function loadfonts(callback) {
 			var xhr = new XMLHttpRequest;
 			var root = (typeof process == 'object' && typeof process.env == 'object' &&
 						process.env.PUBLIC_URL) || '';
-			xhr.open('GET', root + '/bwipjs-fonts/' + fontpath, true);
+			xhr.open('GET', 'https://cdn.jsdelivr.net/gh/FavoriStyle/bwip-js@1.7.1/fonts/' + fontpath, true);
 			xhr.responseType = 'arraybuffer';
 			xhr.onload = function(e) {
 				if (xhr.status == 200) {
